@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2021 the original author or authors.
+ * Copyright 2002-2022 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ import org.springframework.util.StringUtils;
  * <a href="https://tools.ietf.org/html/rfc7230#section-3.2">RFC 7230 section 3.2</a></p>
  *
  * <p>Note that the order of extensions in HTTP headers defines their order of execution,
- * e.g. extensions "foo, bar" will be executed as "bar(foo(message))".</p>
+ * for example, extensions "foo, bar" will be executed as "bar(foo(message))".</p>
  *
  * @author Brian Clozel
  * @author Juergen Hoeller
@@ -83,7 +83,7 @@ public class WebSocketExtension {
 
 
 	/**
-	 * Return the name of the extension (never {@code null) or empty}.
+	 * Return the name of the extension (never {@code null} or empty).
 	 */
 	public String getName() {
 		return this.name;

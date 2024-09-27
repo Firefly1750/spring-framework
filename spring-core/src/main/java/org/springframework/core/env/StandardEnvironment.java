@@ -42,10 +42,11 @@ package org.springframework.core.env;
  * {@link ConfigurableEnvironment} Javadoc for usage examples.
  *
  * <p>See {@link SystemEnvironmentPropertySource} javadoc for details on special handling
- * of property names in shell environments (e.g. Bash) that disallow period characters in
+ * of property names in shell environments (for example, Bash) that disallow period characters in
  * variable names.
  *
  * @author Chris Beams
+ * @author Phillip Webb
  * @since 3.1
  * @see ConfigurableEnvironment
  * @see SystemEnvironmentPropertySource
@@ -61,13 +62,15 @@ public class StandardEnvironment extends AbstractEnvironment {
 
 
 	/**
-	 * Create a new {@code StandardEnvironment} instance.
+	 * Create a new {@code StandardEnvironment} instance with a default
+	 * {@link MutablePropertySources} instance.
 	 */
 	public StandardEnvironment() {
 	}
 
 	/**
-	 * Create a new {@code StandardEnvironment} instance with a specific {@link MutablePropertySources} instance.
+	 * Create a new {@code StandardEnvironment} instance with a specific
+	 * {@link MutablePropertySources} instance.
 	 * @param propertySources property sources to use
 	 * @since 5.3.4
 	 */

@@ -41,7 +41,7 @@ public abstract class ResourceTransformerSupport implements ResourceTransformer 
 
 	/**
 	 * Configure a {@link ResourceUrlProvider} to use when resolving the public
-	 * URL of links in a transformed resource (e.g. import links in a CSS file).
+	 * URL of links in a transformed resource (for example, import links in a CSS file).
 	 * This is required only for links expressed as full paths and not for
 	 * relative links.
 	 * @param resourceUrlProvider the URL provider to use
@@ -62,7 +62,7 @@ public abstract class ResourceTransformerSupport implements ResourceTransformer 
 	/**
 	 * A transformer can use this method when a resource being transformed
 	 * contains links to other resources. Such links need to be replaced with the
-	 * public facing link as determined by the resource resolver chain (e.g. the
+	 * public facing link as determined by the resource resolver chain (for example, the
 	 * public URL may have a version inserted).
 	 * @param resourcePath the path to a resource that needs to be re-written
 	 * @param exchange the current exchange
@@ -89,7 +89,6 @@ public abstract class ResourceTransformerSupport implements ResourceTransformer 
 	 * Transform the given relative request path to an absolute path,
 	 * taking the path of the given request as a point of reference.
 	 * The resulting path is also cleaned from sequences like "path/..".
-	 *
 	 * @param path the relative path to transform
 	 * @param exchange the current exchange
 	 * @return the absolute request path for the given resource path
